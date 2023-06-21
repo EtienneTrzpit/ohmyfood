@@ -38,7 +38,9 @@ Un dossier dist est créé avec style.css
 
 ## Placer le css dans le fichier index.html
 
+```
 <link rel="stylesheet" href="dist/assets/css/style.css">
+```
 
 
 
