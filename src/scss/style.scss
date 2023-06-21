@@ -1,0 +1,36 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+  
+:root {
+  --color1: #9356DC;
+  --color2: #FF79DA;
+  --color3: #99E2D0;
+  --color4: #F3F3F3;
+  --color5: #008766;
+  --color6: #89C8FA;
+  --color7: #003A68;
+  --font-titres: 'Shrikhand';
+  --font-texte: 'Roboto';
+}
+
+
+
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: var(--color3);
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  
+    &-location {
+      background-color: #EAEAEA;
+    }
+  }

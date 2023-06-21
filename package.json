@@ -1,0 +1,14 @@
+{
+  "name": "ohmyfood-main",
+  "version": "1.0.0",
+  "description": "Il s'agit d'une documentation pour installer Sass ici avec Gulp.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:dist/assets/css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.63.4"
+  }
+}
