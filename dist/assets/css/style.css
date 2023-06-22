@@ -142,4 +142,95 @@ html, body {
   margin-left: -2vw;
 }
 
+.restaurants {
+  background-color: var(--color13);
+  padding-top: 6vh;
+  padding-bottom: 8vh;
+}
+.restaurants-title {
+  font-size: 7vw;
+  margin-bottom: 3vh;
+  margin-left: 6vw;
+}
+.restaurants-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3vh;
+}
+.restaurants-article-top {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5% 5% 0 0;
+  width: 90vw;
+}
+.restaurants-article-image {
+  width: 100%;
+  height: 26vh;
+  display: block;
+  object-fit: cover;
+  object-position: bottom;
+}
+.restaurants-article-new {
+  width: 25vw;
+  position: absolute;
+  top: 2vh;
+  right: 4vw;
+}
+.restaurants-article-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 0 0 5% 5%;
+  width: 90vw;
+  background-color: var(--color8);
+}
+.restaurants-article-description {
+  font-size: 4.5vw;
+  padding-left: 5vw;
+  padding-top: 2vh;
+  line-height: 1.4;
+  padding-bottom: 2vh;
+}
+.restaurants-article-like {
+  width: 12vw;
+  height: 6vh;
+  padding-top: 3vh;
+  padding-right: 6vw;
+}
+
+.bottom {
+  background-color: var(--color11);
+  color: var(--color8);
+  padding-left: 5vw;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+.bottom-logo {
+  margin-bottom: 3vh;
+  filter: invert(100%);
+}
+.bottom-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 4vw;
+}
+.bottom-list-item-utensils {
+  margin-right: 4vw;
+  padding-top: 1vh;
+}
+.bottom-list-item-shake {
+  margin-right: 3vw;
+  padding-top: 1vh;
+}
+.bottom-list-link {
+  color: var(--color8);
+  text-decoration: none;
+  margin-bottom: 1vh;
+  display: flex;
+  flex-direction: row;
+}
+
 /*# sourceMappingURL=style.css.map */
