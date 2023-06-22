@@ -16,6 +16,8 @@
   --color9: #EAEAEA;
   --color10: #D2D2D2;
   --color11: #353535;
+  --color12: #7E7E7E;
+  --color13: #F6F6F6;
   --font-title: "Shrikhand";
   --font-text: "Roboto";
 }
@@ -85,6 +87,59 @@ html, body {
   height: 4vh;
   width: 40vw;
   font-size: 22px;
+}
+
+.fonctionnement {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+.fonctionnement-title {
+  font-size: 5vw;
+  margin-bottom: 2vh;
+}
+.fonctionnement-list {
+  list-style-type: none;
+  counter-reset: mycounter;
+  margin-left: 1.5em;
+}
+.fonctionnement-list-etapes {
+  margin-top: 4vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  font-size: 4vw;
+  border-radius: 50px;
+  height: 9vh;
+  width: 90vw;
+  background-color: var(--color13);
+  font-weight: bold;
+  box-shadow: 2px 2px 5px var(--color12);
+}
+.fonctionnement-list-etapes-logo {
+  margin-left: 6vw;
+  margin-right: 6vw;
+  color: var(--color12);
+}
+.fonctionnement-list-etapes-logo__color1 {
+  color: var(--color1);
+  margin-left: 6vw;
+  margin-right: 6vw;
+}
+.fonctionnement-list-etapes::before {
+  content: counter(mycounter);
+  counter-increment: mycounter;
+  display: inline-block;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  background-color: var(--color1);
+  font-size: 40px;
+  margin-left: -2vw;
 }
 
 /*# sourceMappingURL=style.css.map */
