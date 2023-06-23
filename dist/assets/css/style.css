@@ -355,6 +355,43 @@ html, body {
     padding-top: 3vh;
     padding-right: 1.5vw;
   }
+  .bottom {
+    margin-top: -12vh;
+    padding-left: 5vw;
+    height: 12vh;
+    padding-bottom: 2vh;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
+  }
+  .bottom-logo {
+    margin-bottom: 1vh;
+    margin-left: 4vw;
+    margin-right: 8vw;
+    height: 1vw;
+  }
+  .bottom-list {
+    flex-direction: row;
+    font-size: 1vw;
+  }
+  .bottom-list-item {
+    margin-right: 1vw;
+  }
+  .bottom-list-item-utensils {
+    margin-right: 0.4vw;
+    padding-top: 1vh;
+  }
+  .bottom-list-item-shake {
+    margin-right: 0.5vw;
+    padding-top: 1vh;
+  }
+  .bottom-list-item-shake + p {
+    margin-right: 2vw;
+  }
+  .bottom-list-link {
+    margin-bottom: 1vh;
+    flex-direction: row;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

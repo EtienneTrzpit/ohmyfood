@@ -428,4 +428,51 @@
   }
 }
 
+.bottom{
+  margin-top: -12vh;
+  padding-left: 5vw;
+  height: 12vh;
+  padding-bottom: 2vh;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: end;
+
+  &-logo{
+    margin-bottom: 1vh;
+    margin-left: 4vw;
+    margin-right: 8vw;
+    height: 1vw;
+  }
+
+  &-list{
+    flex-direction: row;
+    font-size: 1vw;
+
+    &-item{
+
+      margin-right: 1vw;
+
+      &-utensils{
+        margin-right: 0.4vw;
+        padding-top: 1vh;
+      }
+
+      &-shake{
+        margin-right: 0.5vw;
+        padding-top: 1vh;
+
+        & + p{
+          margin-right: 2vw;
+        }
+      }
+      
+    }
+
+    &-link{
+      margin-bottom: 1vh;
+      flex-direction: row;
+    }
+  }
+
+}
 }
