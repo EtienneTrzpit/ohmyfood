@@ -247,4 +247,44 @@ html, body {
   flex-direction: row;
 }
 
+@media (min-width: 1024px) {
+  .fonctionnement {
+    padding: 0;
+  }
+  .fonctionnement-title {
+    font-size: 2vw;
+    padding-top: 6vh;
+    margin-left: 18vw;
+  }
+  .fonctionnement-list {
+    margin-bottom: 6vh;
+    margin-top: -1vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .fonctionnement-list-etapes {
+    margin-top: 4vh;
+    font-size: 1vw;
+    height: 9vh;
+    width: 20vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+  .fonctionnement-list-etapes-logo {
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+  }
+  .fonctionnement-list-etapes-logo__color1 {
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+  }
+  .fonctionnement-list-etapes::before {
+    width: 1.5vw;
+    height: 1.5vw;
+    font-size: 1.5vw;
+    margin-left: -0.5vw;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
