@@ -247,7 +247,7 @@ html, body {
   flex-direction: row;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .top-logo-img {
     height: 2vw;
   }
