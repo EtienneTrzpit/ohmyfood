@@ -1,31 +1,85 @@
-*, ::before, ::after {
+.lapalette-top {
+  display: flex;
+  height: 8vh;
+}
+.lapalette-top-return {
+  width: 9vw;
+  margin-right: 15vw;
+  margin-left: 4vw;
+  margin-top: 1.5vh;
+}
+.lapalette-top-logo {
+  width: 40vw;
+}
+
+.lapalette-presentation-img {
+  width: 100vw;
+  height: 40vh;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
+.lapalette-presentation-bottom {
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -8vh;
+  padding-left: 4vw;
+  padding-right: 8vw;
+  z-index: 2;
+  height: 14vh;
+  border-radius: 90px 90px 0 0;
+}
+.lapalette-presentation-bottom-title {
+  font-size: 8vw;
+  font-family: var(--font-title);
+  font-weight: 900;
+  padding-top: 4vh;
+}
+.lapalette-presentation-bottom-like {
+  width: 6vw;
+  height: 8vh;
+  padding-top: 5vh;
+}
+
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 :root {
-  --color1: #9356DC;
-  --color2: #FF79DA;
-  --color3: #99E2D0;
-  --color4: #F3F3F3;
+  --color1: #9356dc;
+  --color2: #ff79da;
+  --color3: #99e2d0;
+  --color4: #f3f3f3;
   --color5: #008766;
-  --color6: #89C8FA;
-  --color7: #003A68;
-  --color8: #FFFFFF;
-  --color9: #EAEAEA;
-  --color10: #D2D2D2;
+  --color6: #89c8fa;
+  --color7: #003a68;
+  --color8: #ffffff;
+  --color9: #eaeaea;
+  --color10: #d2d2d2;
   --color11: #353535;
-  --color12: #7E7E7E;
-  --color13: #F6F6F6;
+  --color12: #7e7e7e;
+  --color13: #f6f6f6;
+  --color14: #000000;
   --font-title: "Shrikhand";
   --font-text: "Roboto";
 }
 
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
   background-color: var(--color8);
+}
+
+.link {
+  text-decoration: none;
+  color: var(--color14);
 }
 
 .top {
