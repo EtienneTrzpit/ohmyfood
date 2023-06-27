@@ -114,7 +114,7 @@ body {
   background-color: var(--color13);
   font-family: var(--font-text);
   text-align: center;
-  padding-top: 6vh;
+  padding-top: 4vh;
   padding-bottom: 4vh;
 }
 .description-title {
@@ -126,33 +126,31 @@ body {
 }
 .description-text {
   font-size: 4vw;
-  padding-left: 6vw;
-  padding-right: 6vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
   padding-bottom: 27px;
   color: var(--color11);
+  margin-bottom: 2vh;
 }
-.description-button {
+.description-button-link {
+  text-decoration: none;
   background-color: var(--color1);
   color: var(--color8);
   border: none;
   border-radius: 90px;
-  padding: 10px 20px;
-  font-weight: 700;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
   margin-top: 2vh;
   margin-bottom: 4vh;
   cursor: pointer;
-  height: 8vh;
-  width: 52vw;
-  font-size: 3.5vw;
+  font-size: 3.2vw;
   transition: all 0.3s;
-  box-shadow: 0px 0px 14px var(--color2);
+  box-shadow: 0px 0px 14px var(--color1);
 }
-.description-button-link {
-  text-decoration: none;
-  color: var(--color8);
-}
-.description-button:hover {
-  background-image: linear-gradient(to top, var(--color1), var(--color2));
+.description-button-link:hover {
+  background-image: ligthen(var(--color1), 30%);
   box-shadow: 0px 0px 32px var(--color2);
 }
 
@@ -264,8 +262,26 @@ body {
 .restaurants-article-like {
   width: 12vw;
   height: 6vh;
+  overflow: hidden;
+}
+.restaurants-article-like:hover .restaurants-article-like-like2 {
+  opacity: 1;
+}
+.restaurants-article-like1 {
+  width: 12vw;
+  height: 6vh;
   padding-top: 3vh;
   padding-right: 6vw;
+}
+.restaurants-article-like2 {
+  position: absolute;
+  width: 12vw;
+  height: 6vh;
+  padding-top: 3vh;
+  padding-right: 6vw;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  z-index: 10;
 }
 
 .bottom {
@@ -315,13 +331,16 @@ body {
     font-size: 2.5vw;
   }
   .description-text {
+    margin-left: 6vw;
+    margin-right: 6vw;
     font-size: 1.2vw;
-  }
-  .description-button {
     margin-bottom: 2vh;
-    height: 6vh;
-    width: 16vw;
+  }
+  .description-button-link {
+    margin-bottom: 2vh;
     font-size: 1.1vw;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
   }
   .fonctionnement {
     padding: 0;
@@ -404,6 +423,16 @@ body {
     padding-bottom: 2vh;
   }
   .restaurants-article-like {
+    width: 6vw;
+    height: 6vh;
+  }
+  .restaurants-article-like1 {
+    width: 3vw;
+    height: 5vh;
+    padding-top: 3vh;
+    padding-right: 1.5vw;
+  }
+  .restaurants-article-like2 {
     width: 3vw;
     height: 5vh;
     padding-top: 3vh;
