@@ -80,6 +80,8 @@
   padding: 2vh 2vw;
   display: flex;
   flex-direction: column;
+  opacity: 0;
+  animation: apparition 2s linear forwards;
 }
 .choice-title {
   font-size: 4vw;
@@ -94,6 +96,54 @@
   right: 4vw;
   top: 6vh;
   font-weight: bold;
+}
+
+@keyframes apparition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.entrees .choice:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.entrees .choice:nth-child(3) {
+  animation-delay: 6s;
+}
+
+.entrees .choice:nth-child(4) {
+  animation-delay: 8s;
+}
+
+.entrees .choice:nth-child(5) {
+  animation-delay: 10s;
+}
+
+.plats .choice:nth-child(2) {
+  animation-delay: 14s;
+}
+
+.plats .choice:nth-child(3) {
+  animation-delay: 16s;
+}
+
+.plats .choice:nth-child(4) {
+  animation-delay: 18s;
+}
+
+.desserts .choice:nth-child(2) {
+  animation-delay: 24s;
+}
+
+.desserts .choice:nth-child(3) {
+  animation-delay: 26s;
+}
+
+.desserts .choice:nth-child(4) {
+  animation-delay: 28s;
 }
 
 .commander {
