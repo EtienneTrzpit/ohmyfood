@@ -81,7 +81,7 @@
   display: flex;
   flex-direction: column;
   opacity: 0;
-  animation: apparition 2s linear forwards;
+  animation: apparition 3s linear forwards;
 }
 .choice-title {
   font-size: 4vw;
@@ -96,6 +96,29 @@
   right: 4vw;
   top: 6vh;
   font-weight: bold;
+}
+.choice-selection {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 1vw;
+  height: 10vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: width 3s;
+  transition-delay: 3s;
+  background-color: var(--color3);
+}
+.choice-selection-check {
+  color: var(--color8);
+}
+.choice:hover .choice-selection {
+  display: flex;
+  width: 4vw;
+}
+.choice:hover .choice {
+  margin-right: 4vw;
 }
 
 @keyframes apparition {
