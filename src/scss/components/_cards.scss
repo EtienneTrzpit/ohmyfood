@@ -1,0 +1,110 @@
+@use "../base/typography" as *;
+@use "../utils/variables" as *;
+
+.restaurants {
+  &-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3vh;
+
+    &-top {
+      position: relative;
+      overflow: hidden;
+      border-radius: 5% 5% 0 0;
+      width: 90vw;
+    }
+
+    &-image {
+      width: 100%;
+      height: 26vh;
+      display: block;
+      object-fit: cover;
+      object-position: bottom;
+    }
+
+    &-new {
+      width: 25vw;
+      position: absolute;
+      top: 2vh;
+      right: 4vw;
+    }
+
+    &-bottom {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border-radius: 0 0 5% 5%;
+      width: 90vw;
+      background-color: $color8;
+    }
+
+    &-description {
+      font-size: 4.5vw;
+      padding-left: 5vw;
+      padding-top: 2vh;
+      line-height: 1.4;
+      padding-bottom: 2vh;
+    }
+
+    &-like {
+      width: 12vw;
+      height: 6vh;
+    }
+
+    &-like1 {
+      width: 12vw;
+      height: 6vh;
+      padding-top: 3vh;
+      padding-right: 6vw;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .restaurants {
+    &-article {
+      margin-right: 1vw;
+      margin-bottom: 6vh;
+      &-top {
+        width: 30vw;
+        height: 18vh;
+        border-radius: 20px 20px 0 0;
+      }
+
+      &-new {
+        width: 5vw;
+        position: absolute;
+        top: 1.5vh;
+        right: 1vw;
+      }
+
+      &-bottom {
+        width: 30vw;
+        border-radius: 0 0 20px 20px;
+      }
+
+      &-description {
+        font-size: 1vw;
+        padding-left: 1vw;
+        padding-top: 2vh;
+        line-height: 1.4;
+        padding-bottom: 2vh;
+      }
+
+      &-like {
+        margin-right: -2vw;
+        width: 6vw;
+        height: 6vh;
+      }
+
+      &-like1 {
+        width: 1.6vw;
+        height: 5.5vh;
+        padding-top: 3.5vh;
+        padding-right: 0vw;
+      }
+    }
+  }
+}
