@@ -41,23 +41,34 @@
     }
 
     &-description {
+      font-weight: 300;
       font-size: 4.5vw;
       padding-left: 5vw;
       padding-top: 2vh;
       line-height: 1.4;
       padding-bottom: 2vh;
+
+      & h3 {
+        font-weight: 700;
+      }
     }
 
     &-like {
-      width: 12vw;
-      height: 6vh;
-    }
+      padding-top: 5vh;
+      padding-bottom: 2vw;
 
-    &-like1 {
-      width: 12vw;
-      height: 6vh;
-      padding-top: 3vh;
-      padding-right: 6vw;
+      &:hover {
+        display: none;
+
+        &::before {
+          display: block;
+          content: "f004";
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          font-size: 3vw;
+          color: $color1;
+        }
+      }
     }
   }
 }
@@ -94,16 +105,8 @@
       }
 
       &-like {
-        margin-right: -2vw;
-        width: 6vw;
-        height: 6vh;
-      }
-
-      &-like1 {
-        width: 1.6vw;
-        height: 5.5vh;
-        padding-top: 3.5vh;
-        padding-right: 0vw;
+        padding-top: 5vh;
+        padding-right: 2vw;
       }
     }
   }

@@ -20,6 +20,8 @@ body {
 }
 
 .bottom {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
   background-color: #353535;
   color: #ffffff;
   padding-left: 5vw;
@@ -150,17 +152,18 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 4vw;
   padding-left: 32vw;
   padding-right: 35vw;
   color: #353535;
   border-top: #353535 1px solid;
+  font-weight: 500;
 }
 
 .description {
   background-color: #f6f6f6;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   text-align: center;
   padding-top: 4vh;
   padding-bottom: 4vh;
@@ -173,6 +176,7 @@ body {
   padding-bottom: 27px;
 }
 .description-text {
+  font-weight: 300;
   font-size: 4vw;
   margin-left: 10vw;
   margin-right: 10vw;
@@ -182,12 +186,14 @@ body {
 }
 
 .fonctionnement {
+  font-family: "Roboto", sans-serif;
   padding-top: 5vh;
   padding-bottom: 10vh;
   padding-left: 2vw;
   padding-right: 2vw;
 }
 .fonctionnement-title {
+  font-weight: 700;
   font-size: 7vw;
   margin-bottom: 2vh;
   margin-left: 4vw;
@@ -208,7 +214,7 @@ body {
   height: 9vh;
   width: 90vw;
   background-color: #f6f6f6;
-  font-weight: bold;
+  font-weight: 500;
   box-shadow: 2px 2px 5px #7e7e7e;
 }
 .fonctionnement-list-etapes-logo {
@@ -236,11 +242,13 @@ body {
 }
 
 .restaurants {
+  font-family: "Roboto", sans-serif;
   background-color: #f6f6f6;
   padding-top: 6vh;
   padding-bottom: 8vh;
 }
 .restaurants-title {
+  font-weight: 700;
   font-size: 7vw;
   margin-bottom: 3vh;
   margin-left: 6vw;
@@ -358,8 +366,8 @@ body {
 }
 .restaurant-presentation-bottom-title {
   font-size: 8vw;
-  font-family: "Shrikhand";
-  font-weight: 900;
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 400;
   padding-top: 4vh;
 }
 .restaurant-presentation-bottom-like {
@@ -374,7 +382,7 @@ body {
 }
 .menu-section-title {
   font-size: 4vw;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   position: relative;
   padding-top: 8vh;
   padding-bottom: 4vh;
@@ -392,6 +400,7 @@ body {
 }
 
 .choice {
+  font-family: "Roboto", sans-serif;
   position: relative;
   margin-left: -2vw;
   margin-right: 2vw;
@@ -406,11 +415,13 @@ body {
   animation: apparition 3s linear forwards;
 }
 .choice-title {
-  font-size: 4vw;
+  font-size: 4.5vw;
   margin-bottom: 1vh;
+  font-weight: 500;
 }
 .choice-description {
-  font-size: 4vw;
+  font-size: 3.5vw;
+  font-weight: 300;
 }
 .choice-price {
   font-size: 4vw;
@@ -420,24 +431,25 @@ body {
   font-weight: bold;
 }
 .choice-selection {
-  display: none;
   justify-content: center;
   align-items: center;
-  width: 1vw;
+  width: 0vw;
   height: 10vh;
   position: absolute;
   right: 0;
   top: 0;
-  transition: width 3s;
-  transition-delay: 3s;
+  transition: width 1000ms ease-in;
   background-color: #99e2d0;
 }
 .choice-selection-check {
-  color: #ffffff;
+  color: #7e7e7e;
 }
 .choice:hover .choice-selection {
-  display: flex;
   width: 4vw;
+}
+.choice:hover .choice-selection-check {
+  color: #7e7e7e;
+  background-color: #ffffff;
 }
 .choice:hover .choice {
   margin-right: 4vw;
@@ -496,7 +508,7 @@ body {
     padding: 2vh 1vw;
   }
   .choice-title {
-    font-size: 1vw;
+    font-size: 1.3vw;
   }
   .choice-description {
     font-size: 1vw;
@@ -523,14 +535,21 @@ body {
   font-size: 3.2vw;
   transition: all 0.3s;
   box-shadow: 0px 0px 7px #9356dc;
+  font-weight: 500;
 }
 .description-button-link:hover {
   background: rgb(147, 86, 220);
   background: linear-gradient(0deg, rgb(147, 86, 220) 20%, rgb(255, 121, 218) 75%);
   box-shadow: 0px 0px 24px #9356dc;
 }
+.description-button-link:not(:hover) {
+  background: rgb(147, 86, 220);
+  background: linear-gradient(0deg, rgb(147, 86, 220) 25%, rgb(255, 121, 218) 100%);
+  box-shadow: 0px 0px 7px #9356dc;
+}
 
 .commander {
+  font-weight: 500;
   display: flex;
   justify-content: center;
   margin-top: 12vh;
@@ -553,6 +572,11 @@ body {
   background: rgb(147, 86, 220);
   background: linear-gradient(0deg, rgb(147, 86, 220) 20%, rgb(255, 121, 218) 75%);
   box-shadow: 0px 0px 24px #9356dc;
+}
+.commander-link:not(:hover) {
+  background: rgb(147, 86, 220);
+  background: linear-gradient(0deg, rgb(147, 86, 220) 25%, rgb(255, 121, 218) 100%);
+  box-shadow: 0px 0px 7px #9356dc;
 }
 
 @media (min-width: 1025px) {
@@ -613,21 +637,30 @@ body {
   background-color: #ffffff;
 }
 .restaurants-article-description {
+  font-weight: 300;
   font-size: 4.5vw;
   padding-left: 5vw;
   padding-top: 2vh;
   line-height: 1.4;
   padding-bottom: 2vh;
 }
-.restaurants-article-like {
-  width: 12vw;
-  height: 6vh;
+.restaurants-article-description h3 {
+  font-weight: 700;
 }
-.restaurants-article-like1 {
-  width: 12vw;
-  height: 6vh;
-  padding-top: 3vh;
-  padding-right: 6vw;
+.restaurants-article-like {
+  padding-top: 5vh;
+  padding-bottom: 2vw;
+}
+.restaurants-article-like:hover {
+  display: none;
+}
+.restaurants-article-like:hover::before {
+  display: block;
+  content: "f004";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 3vw;
+  color: #9356dc;
 }
 
 @media (min-width: 1025px) {
@@ -658,15 +691,8 @@ body {
     padding-bottom: 2vh;
   }
   .restaurants-article-like {
-    margin-right: -2vw;
-    width: 6vw;
-    height: 6vh;
-  }
-  .restaurants-article-like1 {
-    width: 1.6vw;
-    height: 5.5vh;
-    padding-top: 3.5vh;
-    padding-right: 0vw;
+    padding-top: 5vh;
+    padding-right: 2vw;
   }
 }
 @keyframes fade-out {

@@ -23,6 +23,7 @@
     font-size: 3.2vw;
     transition: all 0.3s;
     box-shadow: 0px 0px 7px $color1;
+    font-weight: 500;
 
     &:hover {
       background: rgb(147, 86, 220);
@@ -33,10 +34,21 @@
       );
       box-shadow: 0px 0px 24px $color1;
     }
+
+    &:not(:hover) {
+      background: rgb(147, 86, 220);
+      background: linear-gradient(
+        0deg,
+        rgba(147, 86, 220, 1) 25%,
+        rgba(255, 121, 218, 1) 100%
+      );
+      box-shadow: 0px 0px 7px $color1;
+    }
   }
 }
 
 .commander {
+  font-weight: 500;
   display: flex;
   justify-content: center;
   margin-top: 12vh;
@@ -67,6 +79,16 @@
         rgba(255, 121, 218, 1) 75%
       );
       box-shadow: 0px 0px 24px $color1;
+    }
+
+    &:not(:hover) {
+      background: rgb(147, 86, 220);
+      background: linear-gradient(
+        0deg,
+        rgba(147, 86, 220, 1) 25%,
+        rgba(255, 121, 218, 1) 100%
+      );
+      box-shadow: 0px 0px 7px $color1;
     }
   }
 }

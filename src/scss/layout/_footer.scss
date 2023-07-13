@@ -1,6 +1,9 @@
 @use "../utils/variables" as *;
+@use "../base/typography" as *;
 
 .bottom {
+  font-family: $font-text;
+  font-weight: 500;
   background-color: $color11;
   color: $color8;
   padding-left: 5vw;
