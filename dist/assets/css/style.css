@@ -704,10 +704,10 @@ body {
 }
 .restaurants-article-like .fa-heart {
   color: #000000;
-  font-size: 1.5vw;
+  font-size: 7vw;
   position: absolute;
-  top: 2.5vh;
-  right: 1.5vw;
+  top: 3vh;
+  right: 6vw;
   opacity: 0;
   transition: all 0.3s ease-in-out; /* Ajout de la transition */
   z-index: 2;
@@ -786,6 +786,11 @@ body {
   .restaurants-article-like {
     padding-top: 5vh;
     padding-right: 2vw;
+  }
+  .restaurants-article-like .fa-heart {
+    font-size: 2vw;
+    top: 2.5vh;
+    right: 1.5vw;
   }
 }
 @keyframes fade-out {
