@@ -54,20 +54,69 @@
     }
 
     &-like {
-      padding-top: 5vh;
-      padding-bottom: 2vw;
+      position: relative;
+      .fa-heart {
+        color: $color14;
+        font-size: 1.5vw;
+        position: absolute;
+        top: 2.5vh;
+        right: 1.5vw;
+        opacity: 0;
+        transition: all 0.3s ease-in-out; /* Ajout de la transition */
+        z-index: 2;
+      }
 
-      &:hover {
-        display: none;
+      .fas {
+        background-image: $gradient1;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0;
+        transition: all 0.3s ease-in-out; /* Ajout de la transition */
+        z-index: 2;
+      }
 
-        &::before {
-          display: block;
-          content: "f004";
-          font-family: "Font Awesome 5 Free";
-          font-weight: 900;
-          font-size: 3vw;
-          color: $color1;
-        }
+      .fas:hover {
+        transform: scale(1.2); /* Ajout de l'animation */
+      }
+
+      .fas.visible {
+        opacity: 1;
+        z-index: 2;
+      }
+
+      .far {
+        opacity: 1;
+        z-index: 1;
+      }
+
+      &:hover .fas {
+        opacity: 1;
+        cursor: pointer;
+      }
+
+      &:hover .far {
+        opacity: 0;
+      }
+
+      &:hover .fas.visible {
+        opacity: 0;
+      }
+
+      &:hover .far.visible {
+        opacity: 1;
+        z-index: 2;
+      }
+
+      .far.visible {
+        opacity: 0;
+        z-index: 1;
+        transition: all 0.3s ease-in-out; /* Ajout de la transition */
+      }
+
+      &:hover .far.visible {
+        opacity: 1;
+        transform: scale(1.2); /* Ajout de l'animation */
       }
     }
   }
