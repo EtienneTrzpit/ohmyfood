@@ -375,15 +375,15 @@ body {
 }
 .restaurant-presentation-bottom-like .fa-heart {
   color: #000000;
-  font-size: 2vw;
+  font-size: 8vw;
   position: absolute;
-  top: 6vh;
+  top: 5vh;
+  right: 0;
   opacity: 0;
   transition: all 0.3s ease-in-out; /* Ajout de la transition */
   z-index: 2;
 }
 .restaurant-presentation-bottom-like .fas {
-  font-size: 2vw;
   background-image: linear-gradient(175deg, #9356dc 0%, #ff79da 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -532,10 +532,11 @@ body {
     font-size: 2.5vw;
   }
   .restaurant-presentation-bottom-like {
-    padding-top: 7.5vh;
-    margin-left: 2vw;
-    width: 2vw;
-    height: 9vh;
+    margin-left: 4vw;
+  }
+  .restaurant-presentation-bottom-like .fa-heart {
+    font-size: 2vw;
+    top: 6vh;
   }
   .menu-section {
     background-color: #f6f6f6;
