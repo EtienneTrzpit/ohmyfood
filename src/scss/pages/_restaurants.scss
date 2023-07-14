@@ -47,9 +47,70 @@
     }
 
     &-like {
-      width: 6vw;
-      height: 8vh;
-      padding-top: 5vh;
+      position: relative;
+      .fa-heart {
+        color: $color14;
+        font-size: 2vw;
+        position: absolute;
+        top: 6vh;
+        opacity: 0;
+        transition: all 0.3s ease-in-out; /* Ajout de la transition */
+        z-index: 2;
+      }
+
+      .fas {
+        font-size: 2vw;
+        background-image: $gradient1;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0;
+        transition: all 0.3s ease-in-out; /* Ajout de la transition */
+        z-index: 2;
+      }
+
+      .fas:hover {
+        transform: scale(1.2); /* Ajout de l'animation */
+      }
+
+      .fas.visible {
+        opacity: 1;
+        z-index: 2;
+      }
+
+      .far {
+        opacity: 1;
+        z-index: 1;
+      }
+
+      &:hover .fas {
+        opacity: 1;
+        cursor: pointer;
+      }
+
+      &:hover .far {
+        opacity: 0;
+      }
+
+      &:hover .fas.visible {
+        opacity: 0;
+      }
+
+      &:hover .far.visible {
+        opacity: 1;
+        z-index: 2;
+      }
+
+      .far.visible {
+        opacity: 0;
+        z-index: 1;
+        transition: all 0.3s ease-in-out; /* Ajout de la transition */
+      }
+
+      &:hover .far.visible {
+        opacity: 1;
+        transform: scale(1.2); /* Ajout de l'animation */
+      }
     }
   }
 }

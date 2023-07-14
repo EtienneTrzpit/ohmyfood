@@ -371,9 +371,60 @@ body {
   padding-top: 4vh;
 }
 .restaurant-presentation-bottom-like {
-  width: 6vw;
-  height: 8vh;
-  padding-top: 5vh;
+  position: relative;
+}
+.restaurant-presentation-bottom-like .fa-heart {
+  color: #000000;
+  font-size: 2vw;
+  position: absolute;
+  top: 6vh;
+  opacity: 0;
+  transition: all 0.3s ease-in-out; /* Ajout de la transition */
+  z-index: 2;
+}
+.restaurant-presentation-bottom-like .fas {
+  font-size: 2vw;
+  background-image: linear-gradient(175deg, #9356dc 0%, #ff79da 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: all 0.3s ease-in-out; /* Ajout de la transition */
+  z-index: 2;
+}
+.restaurant-presentation-bottom-like .fas:hover {
+  transform: scale(1.2); /* Ajout de l'animation */
+}
+.restaurant-presentation-bottom-like .fas.visible {
+  opacity: 1;
+  z-index: 2;
+}
+.restaurant-presentation-bottom-like .far {
+  opacity: 1;
+  z-index: 1;
+}
+.restaurant-presentation-bottom-like:hover .fas {
+  opacity: 1;
+  cursor: pointer;
+}
+.restaurant-presentation-bottom-like:hover .far {
+  opacity: 0;
+}
+.restaurant-presentation-bottom-like:hover .fas.visible {
+  opacity: 0;
+}
+.restaurant-presentation-bottom-like:hover .far.visible {
+  opacity: 1;
+  z-index: 2;
+}
+.restaurant-presentation-bottom-like .far.visible {
+  opacity: 0;
+  z-index: 1;
+  transition: all 0.3s ease-in-out; /* Ajout de la transition */
+}
+.restaurant-presentation-bottom-like:hover .far.visible {
+  opacity: 1;
+  transform: scale(1.2); /* Ajout de l'animation */
 }
 
 .menu-section {
