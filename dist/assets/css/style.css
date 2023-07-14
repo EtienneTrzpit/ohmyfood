@@ -675,10 +675,16 @@ body {
   object-position: bottom;
 }
 .restaurants-article-new {
-  width: 25vw;
+  font-size: 3vw;
+  text-align: center;
+  padding: 1vh 2vw;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   position: absolute;
   top: 2vh;
   right: 4vw;
+  background-color: #99e2d0;
+  color: #008766;
+  z-index: 3;
 }
 .restaurants-article-bottom {
   display: flex;
@@ -767,10 +773,10 @@ body {
     border-radius: 20px 20px 0 0;
   }
   .restaurants-article-new {
-    width: 5vw;
-    position: absolute;
     top: 1.5vh;
     right: 1vw;
+    font-size: 1vw;
+    padding: 0.5vh 1vw;
   }
   .restaurants-article-bottom {
     width: 30vw;
