@@ -5,12 +5,7 @@
   .description {
     &-button-link {
       text-decoration: none;
-      background: rgb(147, 86, 220);
-      background: linear-gradient(
-        0deg,
-        rgba(147, 86, 220, 1) 25%,
-        rgba(255, 121, 218, 1) 100%
-      );
+      background-image: $gradient1;
       color: $color8;
       border: none;
       border-radius: 90px;
@@ -20,29 +15,18 @@
       padding-bottom: 1vh;
       margin-top: 2vh;
       margin-bottom: 4vh;
-      cursor: pointer;
       font-size: 3.2vw;
       transition: all 0.3s;
       box-shadow: 0px 0px 7px $color1;
       font-weight: 500;
 
       &:hover {
-        background: rgb(147, 86, 220);
-        background: linear-gradient(
-          0deg,
-          rgba(147, 86, 220, 1) 20%,
-          rgba(255, 121, 218, 1) 75%
-        );
+        background-image: $gradient2;
         box-shadow: 0px 0px 24px $color1;
       }
 
       &:not(:hover) {
-        background: rgb(147, 86, 220);
-        background: linear-gradient(
-          0deg,
-          rgba(147, 86, 220, 1) 25%,
-          rgba(255, 121, 218, 1) 100%
-        );
+        background-image: $gradient1;
         box-shadow: 0px 0px 7px $color1;
       }
     }
@@ -62,33 +46,18 @@
       padding-right: 8vw;
       padding-top: 2vh;
       padding-bottom: 2vh;
-      background: rgb(147, 86, 220);
-      background: linear-gradient(
-        0deg,
-        rgba(147, 86, 220, 1) 25%,
-        rgba(255, 121, 218, 1) 100%
-      );
+      background-image: $gradient1;
       border-radius: 75px;
       font-size: 4vw;
       box-shadow: 0px 0px 7px $color1;
 
       &:hover {
-        background: rgb(147, 86, 220);
-        background: linear-gradient(
-          0deg,
-          rgba(147, 86, 220, 1) 20%,
-          rgba(255, 121, 218, 1) 75%
-        );
+        background-image: $gradient2;
         box-shadow: 0px 0px 24px $color1;
       }
 
       &:not(:hover) {
-        background: rgb(147, 86, 220);
-        background: linear-gradient(
-          0deg,
-          rgba(147, 86, 220, 1) 25%,
-          rgba(255, 121, 218, 1) 100%
-        );
+        background-image: $gradient1;
         box-shadow: 0px 0px 7px $color1;
       }
     }
