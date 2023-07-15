@@ -29,7 +29,7 @@
     }
 
     &-bottom {
-      background-color: #f6f6f6;
+      background-color: $color13;
       display: flex;
       justify-content: space-between;
       position: relative;
@@ -209,7 +209,7 @@
   }
 
   .restaurants-main {
-    background-color: #f6f6f6;
+    background-color: $color13;
   }
 }
 

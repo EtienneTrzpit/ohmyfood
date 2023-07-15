@@ -102,27 +102,11 @@ body {
     width: 100vw;
     height: 100vh;
     background: #ffffff;
-    /* background: transparent url('path/to/preloader.gif') no-repeat center center;
-    background-size: cover; */
     position: fixed; /* Position fixe absolue par rapport à la fenêtre du navigateur */
     z-index: 9999; /* Placer au-dessus de tout */
     pointer-events: none;
     animation: fade-out 1s ease-in-out 2s forwards;
   }
-  /*.loader__bar {
-    width: 5px;
-    height: 20px;
-    margin-right: 5px;
-    background-color: $color1;
-    animation: loader-bar-anim 1s ease-in-out infinite;
-  }
-
-  .loader-bar-anim {
-    width: 100%;
-    height: 100%;
-    background-color: $color1;
-    animation: loader 2s ease-in-out infinite;
-  }*/
   .loader__spinner {
     width: 50px;
     height: 50px;
@@ -582,7 +566,7 @@ body {
     font-weight: 500;
   }
   .description-button-link:hover {
-    background-image: linear-gradient(175deg, #9356dc 0%, #ff79da 50%);
+    background-image: linear-gradient(175deg, #9356dc 0%, #ff79da 60%);
     box-shadow: 0px 0px 24px #9356dc;
   }
   .description-button-link:not(:hover) {
@@ -609,7 +593,7 @@ body {
     box-shadow: 0px 0px 7px #9356dc;
   }
   .commander-link:hover {
-    background-image: linear-gradient(175deg, #9356dc 0%, #ff79da 50%);
+    background-image: linear-gradient(175deg, #9356dc 0%, #ff79da 60%);
     box-shadow: 0px 0px 24px #9356dc;
   }
   .commander-link:not(:hover) {
@@ -797,20 +781,6 @@ body {
     opacity: 0;
   }
 }
-/*@keyframes loader-bar-anim {
-  0% {
-    transform: scale(1);
-  }
-  20% {
-    transform: scale(1, 2.5);
-  }
-  40% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}*/
 @keyframes spinner-anim {
   0% {
     transform: rotate(0deg);
