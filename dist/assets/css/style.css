@@ -695,15 +695,10 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0;
-    transition: all 0.3s ease-in-out; /* Ajout de la transition */
     z-index: 2;
   }
   .restaurants-article-like .fas:hover {
     transform: scale(1.2); /* Ajout de l'animation */
-  }
-  .restaurants-article-like .fas.visible {
-    opacity: 1;
-    z-index: 2;
   }
   .restaurants-article-like .far {
     opacity: 1;
@@ -715,22 +710,6 @@ body {
   }
   .restaurants-article-like:hover .far {
     opacity: 0;
-  }
-  .restaurants-article-like:hover .fas.visible {
-    opacity: 0;
-  }
-  .restaurants-article-like:hover .far.visible {
-    opacity: 1;
-    z-index: 2;
-  }
-  .restaurants-article-like .far.visible {
-    opacity: 0;
-    z-index: 1;
-    transition: all 0.3s ease-in-out; /* Ajout de la transition */
-  }
-  .restaurants-article-like:hover .far.visible {
-    opacity: 1;
-    transform: scale(1.2); /* Ajout de l'animation */
   }
 }
 @media (min-width: 1025px) {
