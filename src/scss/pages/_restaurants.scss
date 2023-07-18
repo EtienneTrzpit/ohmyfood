@@ -144,9 +144,9 @@
 
   .choice {
     display: flex;
+    position: relative;
     flex-direction: row;
     font-family: $font-text;
-    position: relative;
     margin-left: -2vw;
     margin-right: 2vw;
     height: 10vh;
@@ -159,6 +159,7 @@
 
     &-content {
       display: flex;
+      margin-bottom: -4vh;
       flex-direction: column;
       @include ellipsis;
     }

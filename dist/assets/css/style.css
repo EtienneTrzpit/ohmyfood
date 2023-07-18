@@ -430,9 +430,9 @@ body {
   }
   .choice {
     display: flex;
+    position: relative;
     flex-direction: row;
     font-family: "Roboto", sans-serif;
-    position: relative;
     margin-left: -2vw;
     margin-right: 2vw;
     height: 10vh;
@@ -445,6 +445,7 @@ body {
   }
   .choice-content {
     display: flex;
+    margin-bottom: -4vh;
     flex-direction: column;
     white-space: nowrap;
     overflow: hidden;
