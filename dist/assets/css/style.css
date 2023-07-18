@@ -429,6 +429,8 @@ body {
     transform: translateX(-50%);
   }
   .choice {
+    display: flex;
+    flex-direction: row;
     font-family: "Roboto", sans-serif;
     position: relative;
     margin-left: -2vw;
@@ -438,10 +440,12 @@ body {
     border-radius: 25px;
     margin-bottom: 2vh;
     padding: 2vh 2vw;
-    display: flex;
-    flex-direction: column;
     opacity: 0;
     animation: apparition 3s linear forwards;
+  }
+  .choice-content {
+    display: flex;
+    flex-direction: column;
   }
   .choice-title {
     font-size: 4.5vw;
@@ -454,12 +458,12 @@ body {
   }
   .choice-price {
     font-size: 4vw;
-    position: absolute;
-    right: 4vw;
     top: 6vh;
     font-weight: bold;
+    margin-left: auto;
   }
   .choice-selection {
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 0vw;
@@ -470,18 +474,25 @@ body {
     transition: width 1000ms ease-in;
     background-color: #99e2d0;
   }
-  .choice-selection-check {
+  .choice-selection-check.fa-check {
+    font-size: 1vw;
+    display: none;
     color: #7e7e7e;
+    background-color: #ffffff;
+    padding: 0.6vw 0.3vw;
+    border-radius: 50%;
   }
   .choice:hover .choice-selection {
     width: 4vw;
+    transition: 400ms ease-in-out;
   }
   .choice:hover .choice-selection-check {
-    color: #7e7e7e;
-    background-color: #ffffff;
+    display: flex;
+    transition: 400ms ease-in-out;
   }
-  .choice:hover .choice {
-    margin-right: 4vw;
+  .choice:hover .choice-price {
+    transform: translateX(-8vw);
+    transition: 400ms ease-in-out;
   }
   .restaurants-main {
     background-color: #f6f6f6;
@@ -544,9 +555,13 @@ body {
   }
   .choice-price {
     font-size: 1vw;
-    right: 1vw;
+    margin-top: 4vh;
   }
 }
+.choice:hover .choice-price {
+  transform: translateX(-4vw);
+}
+
 @media (min-width: 350px) {
   .description-button-link {
     text-decoration: none;
