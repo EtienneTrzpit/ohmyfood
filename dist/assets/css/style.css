@@ -446,6 +446,9 @@ body {
   .choice-content {
     display: flex;
     flex-direction: column;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .choice-title {
     font-size: 4.5vw;
@@ -458,7 +461,7 @@ body {
   }
   .choice-price {
     font-size: 4vw;
-    top: 6vh;
+    margin-top: 3vh;
     font-weight: bold;
     margin-left: auto;
   }
@@ -475,24 +478,26 @@ body {
     background-color: #99e2d0;
   }
   .choice-selection-check.fa-check {
-    font-size: 1vw;
+    font-size: 3.5vw;
     display: none;
     color: #7e7e7e;
     background-color: #ffffff;
-    padding: 0.6vw 0.3vw;
+    padding: 2.5vw 2vw;
     border-radius: 50%;
   }
   .choice:hover .choice-selection {
-    width: 4vw;
+    width: 16vw;
     transition: 400ms ease-in-out;
   }
   .choice:hover .choice-selection-check {
     display: flex;
     transition: 400ms ease-in-out;
   }
+  .choice:hover .choice-content {
+    width: 60vw;
+  }
   .choice:hover .choice-price {
-    transform: translateX(-8vw);
-    transition: 400ms ease-in-out;
+    transform: translateX(-16vw);
   }
   .restaurants-main {
     background-color: #f6f6f6;
@@ -557,11 +562,20 @@ body {
     font-size: 1vw;
     margin-top: 4vh;
   }
+  .choice-selection-check.fa-check {
+    font-size: 1vw;
+    padding: 0.6vw 0.3vw;
+  }
+  .choice:hover .choice-selection {
+    width: 4vw;
+  }
+  .choice:hover .choice-price {
+    transform: translateX(-8vw);
+  }
+  .choice:hover .choice-price {
+    transform: translateX(-4vw);
+  }
 }
-.choice:hover .choice-price {
-  transform: translateX(-4vw);
-}
-
 @media (min-width: 350px) {
   .description-button-link {
     text-decoration: none;

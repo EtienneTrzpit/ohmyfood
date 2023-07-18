@@ -1,5 +1,6 @@
 @use "../utils/variables" as *;
 @use "../base/typography" as *;
+@use "../utils/mixins" as *;
 
 @media (min-width: 350px) {
   .restaurant-top {
@@ -159,6 +160,7 @@
     &-content {
       display: flex;
       flex-direction: column;
+      @include ellipsis;
     }
 
     &-title {
@@ -174,7 +176,7 @@
 
     &-price {
       font-size: 4vw;
-      top: 6vh;
+      margin-top: 3vh;
       font-weight: bold;
       margin-left: auto;
     }
@@ -193,18 +195,18 @@
       background-color: $color3;
 
       &-check.fa-check {
-        font-size: 1vw;
+        font-size: 3.5vw;
         display: none;
         color: $color12;
         background-color: $color8;
-        padding: 0.6vw 0.3vw;
+        padding: 2.5vw 2vw;
         border-radius: 50%;
       }
     }
 
     &:hover {
       .choice-selection {
-        width: 4vw;
+        width: 16vw;
         transition: 400ms ease-in-out;
 
         &-check {
@@ -213,9 +215,12 @@
         }
       }
 
+      .choice-content {
+        width: 60vw;
+      }
+
       .choice-price {
-        transform: translateX(-8vw);
-        transition: 400ms ease-in-out;
+        transform: translateX(-16vw);
       }
     }
   }
@@ -298,9 +303,24 @@
       font-size: 1vw;
       margin-top: 4vh;
     }
-  }
-}
 
-.choice:hover .choice-price {
-  transform: translateX(-4vw);
+    &-selection-check.fa-check {
+      font-size: 1vw;
+      padding: 0.6vw 0.3vw;
+    }
+
+    &:hover {
+      .choice-selection {
+        width: 4vw;
+      }
+
+      .choice-price {
+        transform: translateX(-8vw);
+      }
+    }
+  }
+
+  .choice:hover .choice-price {
+    transform: translateX(-4vw);
+  }
 }
