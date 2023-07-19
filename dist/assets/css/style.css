@@ -451,18 +451,21 @@ body {
     display: flex;
     margin-bottom: -4vh;
     flex-direction: column;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
   .choice-title {
     font-size: 20px;
     margin-bottom: 1vh;
     font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .choice-description {
     font-size: 18px;
     font-weight: 300;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .choice-price {
     font-size: 18px;

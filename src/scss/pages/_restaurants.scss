@@ -165,18 +165,19 @@
       display: flex;
       margin-bottom: -4vh;
       flex-direction: column;
-      @include ellipsis;
     }
 
     &-title {
       font-size: 20px;
       margin-bottom: 1vh;
       font-weight: 500;
+      @include ellipsis;
     }
 
     &-description {
       font-size: 18px;
       font-weight: 300;
+      @include ellipsis;
     }
 
     &-price {
