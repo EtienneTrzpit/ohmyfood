@@ -2,238 +2,236 @@
 @use "../base/typography" as *;
 @use "../utils/mixins" as *;
 
-@media (min-width: 350px) {
-  .restaurant-top {
-    position: relative;
-    justify-content: center;
-    display: flex;
-    height: 8vh;
+.restaurant-top {
+  position: relative;
+  justify-content: center;
+  display: flex;
+  height: 8vh;
 
-    &-return {
-      position: absolute;
-      width: 40px;
-      left: 4vw;
-      top: 2vh;
-    }
-
-    &-logo {
-      width: 200px;
-    }
+  &-return {
+    position: absolute;
+    width: 40px;
+    left: 4vw;
+    top: 2vh;
   }
 
-  .restaurant-presentation {
-    margin-bottom: -14vh;
-    &-img {
-      width: 100vw;
-      height: 40vh;
-      object-fit: cover;
-      object-position: center;
-      overflow: hidden;
-    }
+  &-logo {
+    width: 200px;
+  }
+}
 
-    &-bottom {
-      background-color: $color13;
-      display: flex;
-      justify-content: space-between;
-      position: relative;
-      top: -8vh;
-      margin-left: -10px;
-      margin-right: -10px;
-      z-index: 2;
-      height: 14vh;
-      border-radius: 90px 90px 0 0;
-
-      &-title {
-        font-size: 35px;
-        font-family: $font-title;
-        font-weight: 400;
-        padding-top: 60px;
-        margin-left: 5vw;
-      }
-
-      &-like {
-        position: relative;
-        margin-top: 70px;
-        margin-right: 25vw;
-        .fa-heart {
-          position: absolute;
-          color: $color14;
-          font-size: 30px;
-          opacity: 0;
-          transition: all 0.3s ease-in-out; /* Ajout de la transition */
-          z-index: 2;
-        }
-
-        .fas {
-          background-image: $gradient1;
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          opacity: 0;
-          transition: all 0.3s ease-in-out; /* Ajout de la transition */
-          z-index: 2;
-        }
-
-        .fas:hover {
-          transform: scale(1.2); /* Ajout de l'animation */
-        }
-
-        .fas.visible {
-          opacity: 1;
-          z-index: 2;
-        }
-
-        .far {
-          opacity: 1;
-          z-index: 1;
-        }
-
-        &:hover .fas {
-          opacity: 1;
-          cursor: pointer;
-        }
-
-        &:hover .far {
-          opacity: 0;
-        }
-
-        &:hover .fas.visible {
-          opacity: 0;
-        }
-
-        &:hover .far.visible {
-          opacity: 1;
-          z-index: 2;
-        }
-
-        .far.visible {
-          opacity: 0;
-          z-index: 1;
-          transition: all 0.3s ease-in-out; /* Ajout de la transition */
-        }
-
-        &:hover .far.visible {
-          opacity: 1;
-          transform: scale(1.2); /* Ajout de l'animation */
-        }
-      }
-    }
+.restaurant-presentation {
+  margin-bottom: -14vh;
+  &-img {
+    width: 100vw;
+    height: 40vh;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
   }
 
-  .menu-section {
-    margin-left: 4vw;
-    margin-bottom: -6vh;
-
-    &-title {
-      font-size: 22px;
-      font-family: $font-text;
-      position: relative;
-      padding-top: 8vh;
-      padding-bottom: 4vh;
-      font-weight: lighter;
-      margin-left: -10px;
-
-      &::after {
-        content: "";
-        position: absolute;
-        left: 19px;
-        top: 105px;
-        width: 36px;
-        height: 3px;
-        background-color: $color3;
-        transform: translateX(-50%);
-      }
-    }
-  }
-
-  .choice {
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    font-family: $font-text;
-    margin-left: -2vw;
-    margin-right: 2vw;
-    height: 10vh;
-    background-color: $color8;
-    border-radius: 25px;
-    margin-bottom: 2vh;
-    padding: 2vh 2vw;
-    opacity: 0;
-    animation: apparition 3s linear forwards;
-
-    &-content {
-      display: flex;
-      margin-bottom: -4vh;
-      flex-direction: column;
-    }
-
-    &-title {
-      font-size: 20px;
-      margin-bottom: 1vh;
-      font-weight: 500;
-      @include ellipsis;
-    }
-
-    &-description {
-      font-size: 18px;
-      font-weight: 300;
-      @include ellipsis;
-    }
-
-    &-price {
-      font-size: 18px;
-      margin-top: 33px;
-      font-weight: bold;
-      margin-left: auto;
-    }
-
-    &-selection {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 0vw;
-      height: 10vh;
-      position: absolute;
-      right: 0;
-      top: 0;
-      transition: width 1000ms ease-in;
-
-      background-color: $color3;
-
-      &-check.fa-check {
-        font-size: 3.5vw;
-        display: none;
-        color: $color12;
-        background-color: $color8;
-        padding: 2.5vw 2vw;
-        border-radius: 50%;
-      }
-    }
-
-    &:hover {
-      .choice-selection {
-        width: 16vw;
-        transition: 400ms ease-in-out;
-
-        &-check {
-          display: flex;
-          transition: 400ms ease-in-out;
-        }
-      }
-
-      .choice-content {
-        width: 60vw;
-      }
-
-      .choice-price {
-        transform: translateX(-16vw);
-      }
-    }
-  }
-
-  .restaurants-main {
+  &-bottom {
     background-color: $color13;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -8vh;
+    margin-left: -10px;
+    margin-right: -10px;
+    z-index: 2;
+    height: 14vh;
+    border-radius: 90px 90px 0 0;
+
+    &-title {
+      font-size: 35px;
+      font-family: $font-title;
+      font-weight: 400;
+      padding-top: 60px;
+      margin-left: 5vw;
+    }
+
+    &-like {
+      position: relative;
+      margin-top: 70px;
+      margin-right: 25vw;
+      .fa-heart {
+        position: absolute;
+        color: $color14;
+        font-size: 30px;
+        opacity: 0;
+        transition: all 0.3s ease-in-out; /* Ajout de la transition */
+        z-index: 2;
+      }
+
+      .fas {
+        background-image: $gradient1;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0;
+        transition: all 0.3s ease-in-out; /* Ajout de la transition */
+        z-index: 2;
+      }
+
+      .fas:hover {
+        transform: scale(1.2); /* Ajout de l'animation */
+      }
+
+      .fas.visible {
+        opacity: 1;
+        z-index: 2;
+      }
+
+      .far {
+        opacity: 1;
+        z-index: 1;
+      }
+
+      &:hover .fas {
+        opacity: 1;
+        cursor: pointer;
+      }
+
+      &:hover .far {
+        opacity: 0;
+      }
+
+      &:hover .fas.visible {
+        opacity: 0;
+      }
+
+      &:hover .far.visible {
+        opacity: 1;
+        z-index: 2;
+      }
+
+      .far.visible {
+        opacity: 0;
+        z-index: 1;
+        transition: all 0.3s ease-in-out; /* Ajout de la transition */
+      }
+
+      &:hover .far.visible {
+        opacity: 1;
+        transform: scale(1.2); /* Ajout de l'animation */
+      }
+    }
   }
+}
+
+.menu-section {
+  margin-left: 4vw;
+  margin-bottom: -6vh;
+
+  &-title {
+    font-size: 22px;
+    font-family: $font-text;
+    position: relative;
+    padding-top: 8vh;
+    padding-bottom: 4vh;
+    font-weight: lighter;
+    margin-left: -10px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 19px;
+      top: 105px;
+      width: 36px;
+      height: 3px;
+      background-color: $color3;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.choice {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  font-family: $font-text;
+  margin-left: -2vw;
+  margin-right: 2vw;
+  height: 10vh;
+  background-color: $color8;
+  border-radius: 25px;
+  margin-bottom: 2vh;
+  padding: 2vh 2vw;
+  opacity: 0;
+  animation: apparition 3s linear forwards;
+
+  &-content {
+    display: flex;
+    margin-bottom: -4vh;
+    flex-direction: column;
+  }
+
+  &-title {
+    font-size: 20px;
+    margin-bottom: 1vh;
+    font-weight: 500;
+    @include ellipsis;
+  }
+
+  &-description {
+    font-size: 18px;
+    font-weight: 300;
+    @include ellipsis;
+  }
+
+  &-price {
+    font-size: 18px;
+    margin-top: 33px;
+    font-weight: bold;
+    margin-left: auto;
+  }
+
+  &-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0vw;
+    height: 10vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: width 1000ms ease-in;
+
+    background-color: $color3;
+
+    &-check.fa-check {
+      font-size: 3.5vw;
+      display: none;
+      color: $color12;
+      background-color: $color8;
+      padding: 2.5vw 2vw;
+      border-radius: 50%;
+    }
+  }
+
+  &:hover {
+    .choice-selection {
+      width: 16vw;
+      transition: 400ms ease-in-out;
+
+      &-check {
+        display: flex;
+        transition: 400ms ease-in-out;
+      }
+    }
+
+    .choice-content {
+      width: 60vw;
+    }
+
+    .choice-price {
+      transform: translateX(-16vw);
+    }
+  }
+}
+
+.restaurants-main {
+  background-color: $color13;
 }
 
 @media (min-width: 1025px) {

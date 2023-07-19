@@ -1,104 +1,102 @@
 @use "../base/typography" as *;
 @use "../utils/variables" as *;
 
-@media (min-width: 350px) {
-  .restaurants {
-    &-article {
+.restaurants {
+  &-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3vh;
+
+    &-top {
+      position: relative;
+      overflow: hidden;
+      border-radius: 5% 5% 0 0;
+      width: 90vw;
+    }
+
+    &-image {
+      width: 100%;
+      height: 26vh;
+      display: block;
+      object-fit: cover;
+      object-position: bottom;
+    }
+
+    &-new {
+      font-size: 3vw;
+      text-align: center;
+      padding: 1vh 2vw;
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+      position: absolute;
+      top: 2vh;
+      right: 4vw;
+      background-color: $color3;
+      color: $color5;
+      z-index: 3;
+    }
+
+    &-bottom {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 3vh;
+      flex-direction: row;
+      justify-content: space-between;
+      border-radius: 0 0 5% 5%;
+      width: 90vw;
+      background-color: $color8;
+    }
 
-      &-top {
-        position: relative;
-        overflow: hidden;
-        border-radius: 5% 5% 0 0;
-        width: 90vw;
+    &-description {
+      font-weight: 300;
+      font-size: 4.5vw;
+      padding-left: 5vw;
+      padding-top: 2vh;
+      line-height: 1.4;
+      padding-bottom: 2vh;
+
+      & h3 {
+        font-weight: 700;
       }
+    }
 
-      &-image {
-        width: 100%;
-        height: 26vh;
-        display: block;
-        object-fit: cover;
-        object-position: bottom;
-      }
-
-      &-new {
-        font-size: 3vw;
-        text-align: center;
-        padding: 1vh 2vw;
-        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    &-like {
+      position: relative;
+      .fa-heart {
+        color: $color14;
+        font-size: 7vw;
         position: absolute;
-        top: 2vh;
-        right: 4vw;
-        background-color: $color3;
-        color: $color5;
-        z-index: 3;
+        top: 3vh;
+        right: 6vw;
+        opacity: 0;
+        transition: all 0.3s ease-in-out; /* Ajout de la transition */
+        z-index: 2;
       }
 
-      &-bottom {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        border-radius: 0 0 5% 5%;
-        width: 90vw;
-        background-color: $color8;
+      .fas {
+        background-image: $gradient1;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0;
+        z-index: 2;
       }
 
-      &-description {
-        font-weight: 300;
-        font-size: 4.5vw;
-        padding-left: 5vw;
-        padding-top: 2vh;
-        line-height: 1.4;
-        padding-bottom: 2vh;
-
-        & h3 {
-          font-weight: 700;
-        }
+      .fas:hover {
+        transform: scale(1.2); /* Ajout de l'animation */
       }
 
-      &-like {
-        position: relative;
-        .fa-heart {
-          color: $color14;
-          font-size: 7vw;
-          position: absolute;
-          top: 3vh;
-          right: 6vw;
-          opacity: 0;
-          transition: all 0.3s ease-in-out; /* Ajout de la transition */
-          z-index: 2;
-        }
+      .far {
+        opacity: 1;
+        z-index: 1;
+      }
 
-        .fas {
-          background-image: $gradient1;
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          opacity: 0;
-          z-index: 2;
-        }
+      &:hover .fas {
+        opacity: 1;
+        cursor: pointer;
+      }
 
-        .fas:hover {
-          transform: scale(1.2); /* Ajout de l'animation */
-        }
-
-        .far {
-          opacity: 1;
-          z-index: 1;
-        }
-
-        &:hover .fas {
-          opacity: 1;
-          cursor: pointer;
-        }
-
-        &:hover .far {
-          opacity: 0;
-        }
+      &:hover .far {
+        opacity: 0;
       }
     }
   }

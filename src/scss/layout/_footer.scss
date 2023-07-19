@@ -1,46 +1,44 @@
 @use "../utils/variables" as *;
 @use "../base/typography" as *;
 
-@media (min-width: 350px) {
-  .bottom {
-    font-family: $font-text;
-    font-weight: 500;
-    background-color: $color11;
-    color: $color8;
-    padding-left: 5vw;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
+.bottom {
+  font-family: $font-text;
+  font-weight: 500;
+  background-color: $color11;
+  color: $color8;
+  padding-left: 5vw;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
 
-    &-logo {
-      margin-bottom: 3vh;
-      filter: invert(100%);
+  &-logo {
+    margin-bottom: 3vh;
+    filter: invert(100%);
+  }
+
+  &-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 4vw;
+
+    &-item {
+      &-utensils {
+        margin-right: 4vw;
+        padding-top: 1vh;
+      }
+
+      &-shake {
+        margin-right: 3vw;
+        padding-top: 1vh;
+      }
     }
 
-    &-list {
-      list-style-type: none;
+    &-link {
+      color: $color8;
+      text-decoration: none;
+      margin-bottom: 1vh;
       display: flex;
-      flex-direction: column;
-      font-size: 4vw;
-
-      &-item {
-        &-utensils {
-          margin-right: 4vw;
-          padding-top: 1vh;
-        }
-
-        &-shake {
-          margin-right: 3vw;
-          padding-top: 1vh;
-        }
-      }
-
-      &-link {
-        color: $color8;
-        text-decoration: none;
-        margin-bottom: 1vh;
-        display: flex;
-        flex-direction: row;
-      }
+      flex-direction: row;
     }
   }
 }
