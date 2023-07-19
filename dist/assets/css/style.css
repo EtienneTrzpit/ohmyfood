@@ -523,14 +523,14 @@ body {
     margin-right: 20vw;
   }
   .restaurant-presentation-bottom-title {
-    font-size: 2.5vw;
+    font-size: 35px;
   }
   .restaurant-presentation-bottom-like {
     margin-left: 4vw;
   }
   .restaurant-presentation-bottom-like .fa-heart {
-    font-size: 2vw;
-    top: 6vh;
+    font-size: 30px;
+    top: 50px;
   }
   .menu-section {
     background-color: #f6f6f6;
@@ -540,13 +540,13 @@ body {
   }
   .menu-section-title {
     margin-left: 8vw;
-    font-size: 1.4vw;
+    font-size: 19px;
   }
   .menu-section-title::after {
-    left: 1.6vw;
-    top: 12vh;
-    width: 3vw;
-    height: 0.5vh;
+    left: 20px;
+    top: 105px;
+    width: 36px;
+    height: 3px;
   }
   .choice {
     margin-left: 8vw;
@@ -554,14 +554,14 @@ body {
     padding: 2vh 1vw;
   }
   .choice-title {
-    font-size: 1.3vw;
+    font-size: 20px;
   }
   .choice-description {
-    font-size: 1vw;
+    font-size: 17px;
   }
   .choice-price {
-    font-size: 1vw;
-    margin-top: 4vh;
+    font-size: 17px;
+    margin-top: 35px;
   }
   .choice-selection-check.fa-check {
     font-size: 1vw;
@@ -572,6 +572,9 @@ body {
   }
   .choice:hover .choice-price {
     transform: translateX(-8vw);
+  }
+  .choice:hover .choice-content {
+    width: 27vw;
   }
   .choice:hover .choice-price {
     transform: translateX(-4vw);
