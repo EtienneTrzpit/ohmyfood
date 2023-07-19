@@ -310,17 +310,19 @@ body {
 }
 @media (min-width: 350px) {
   .restaurant-top {
+    position: relative;
+    justify-content: center;
     display: flex;
     height: 8vh;
   }
   .restaurant-top-return {
-    width: 9vw;
-    margin-right: 15vw;
-    margin-left: 4vw;
-    margin-top: 1.5vh;
+    position: absolute;
+    width: 40px;
+    left: 4vw;
+    top: 2vh;
   }
   .restaurant-top-logo {
-    width: 40vw;
+    width: 200px;
   }
   .restaurant-presentation {
     margin-bottom: -14vh;
@@ -511,13 +513,11 @@ body {
     background-color: #ffffff;
   }
   .restaurant-top-return {
-    width: 2vw;
-    margin-right: 40vw;
-    margin-left: 1vw;
-    margin-top: 2vh;
+    width: 40px;
+    left: 1vw;
   }
   .restaurant-top-logo {
-    width: 10vw;
+    width: 200px;
   }
   .restaurant-presentation-bottom {
     justify-content: center;

@@ -4,18 +4,20 @@
 
 @media (min-width: 350px) {
   .restaurant-top {
+    position: relative;
+    justify-content: center;
     display: flex;
     height: 8vh;
 
     &-return {
-      width: 9vw;
-      margin-right: 15vw;
-      margin-left: 4vw;
-      margin-top: 1.5vh;
+      position: absolute;
+      width: 40px;
+      left: 4vw;
+      top: 2vh;
     }
 
     &-logo {
-      width: 40vw;
+      width: 200px;
     }
   }
 
@@ -240,14 +242,12 @@
 
   .restaurant-top {
     &-return {
-      width: 2vw;
-      margin-right: 40vw;
-      margin-left: 1vw;
-      margin-top: 2vh;
+      width: 40px;
+      left: 1vw;
     }
 
     &-logo {
-      width: 10vw;
+      width: 200px;
     }
   }
 
