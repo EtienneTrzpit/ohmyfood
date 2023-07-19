@@ -34,7 +34,7 @@
     &-bottom {
       background-color: $color13;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       position: relative;
       top: -8vh;
       margin-left: -10px;
@@ -48,13 +48,13 @@
         font-family: $font-title;
         font-weight: 400;
         padding-top: 60px;
-        margin-left: -15vw;
+        margin-left: 5vw;
       }
 
       &-like {
         position: relative;
         margin-top: 70px;
-        margin-left: 8vw;
+        margin-right: 25vw;
         .fa-heart {
           position: absolute;
           color: $color14;
@@ -254,16 +254,19 @@
 
   .restaurant-presentation {
     &-bottom {
-      justify-content: center;
       margin-left: 20vw;
       margin-right: 20vw;
+      padding-left: -14vw;
+      display: flex;
+      justify-content: center;
 
       &-title {
         font-size: 35px;
-        margin-left: -7vw;
+        margin-left: -4vw;
       }
       &-like {
-        margin-left: 4vw;
+        display: flex;
+        margin-right: -4vw;
         .fa-heart {
           font-size: 30px;
         }

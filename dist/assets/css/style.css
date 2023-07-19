@@ -337,7 +337,7 @@ body {
   .restaurant-presentation-bottom {
     background-color: #f6f6f6;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     position: relative;
     top: -8vh;
     margin-left: -10px;
@@ -351,12 +351,12 @@ body {
     font-family: "Shrikhand", sans-serif;
     font-weight: 400;
     padding-top: 60px;
-    margin-left: -15vw;
+    margin-left: 5vw;
   }
   .restaurant-presentation-bottom-like {
     position: relative;
     margin-top: 70px;
-    margin-left: 8vw;
+    margin-right: 25vw;
   }
   .restaurant-presentation-bottom-like .fa-heart {
     position: absolute;
@@ -523,16 +523,19 @@ body {
     width: 200px;
   }
   .restaurant-presentation-bottom {
-    justify-content: center;
     margin-left: 20vw;
     margin-right: 20vw;
+    padding-left: -14vw;
+    display: flex;
+    justify-content: center;
   }
   .restaurant-presentation-bottom-title {
     font-size: 35px;
-    margin-left: -7vw;
+    margin-left: -4vw;
   }
   .restaurant-presentation-bottom-like {
-    margin-left: 4vw;
+    display: flex;
+    margin-right: -4vw;
   }
   .restaurant-presentation-bottom-like .fa-heart {
     font-size: 30px;
