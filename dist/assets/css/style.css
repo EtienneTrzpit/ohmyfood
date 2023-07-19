@@ -335,30 +335,31 @@ body {
   .restaurant-presentation-bottom {
     background-color: #f6f6f6;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     position: relative;
     top: -8vh;
-    padding-left: 4vw;
-    padding-right: 8vw;
+    margin-left: -10px;
+    margin-right: -10px;
     z-index: 2;
     height: 14vh;
     border-radius: 90px 90px 0 0;
   }
   .restaurant-presentation-bottom-title {
-    font-size: 8vw;
+    font-size: 35px;
     font-family: "Shrikhand", sans-serif;
     font-weight: 400;
-    padding-top: 4vh;
+    padding-top: 60px;
+    margin-left: -15vw;
   }
   .restaurant-presentation-bottom-like {
     position: relative;
+    margin-top: 70px;
+    margin-left: 8vw;
   }
   .restaurant-presentation-bottom-like .fa-heart {
-    color: #000000;
-    font-size: 8vw;
     position: absolute;
-    top: 5vh;
-    right: 0;
+    color: #000000;
+    font-size: 30px;
     opacity: 0;
     transition: all 0.3s ease-in-out; /* Ajout de la transition */
     z-index: 2;
@@ -411,20 +412,21 @@ body {
     margin-bottom: -6vh;
   }
   .menu-section-title {
-    font-size: 4vw;
+    font-size: 22px;
     font-family: "Roboto", sans-serif;
     position: relative;
     padding-top: 8vh;
     padding-bottom: 4vh;
     font-weight: lighter;
+    margin-left: -10px;
   }
   .menu-section-title::after {
     content: "";
     position: absolute;
-    left: 4vw;
-    top: 12vh;
-    width: 8vw;
-    height: 0.5vh;
+    left: 19px;
+    top: 105px;
+    width: 36px;
+    height: 3px;
     background-color: #99e2d0;
     transform: translateX(-50%);
   }
@@ -452,17 +454,17 @@ body {
     text-overflow: ellipsis;
   }
   .choice-title {
-    font-size: 4.5vw;
+    font-size: 20px;
     margin-bottom: 1vh;
     font-weight: 500;
   }
   .choice-description {
-    font-size: 3.5vw;
+    font-size: 18px;
     font-weight: 300;
   }
   .choice-price {
-    font-size: 4vw;
-    margin-top: 3vh;
+    font-size: 18px;
+    margin-top: 33px;
     font-weight: bold;
     margin-left: auto;
   }
@@ -524,13 +526,13 @@ body {
   }
   .restaurant-presentation-bottom-title {
     font-size: 35px;
+    margin-left: -7vw;
   }
   .restaurant-presentation-bottom-like {
     margin-left: 4vw;
   }
   .restaurant-presentation-bottom-like .fa-heart {
     font-size: 30px;
-    top: 50px;
   }
   .menu-section {
     background-color: #f6f6f6;
