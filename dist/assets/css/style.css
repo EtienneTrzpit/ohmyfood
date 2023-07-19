@@ -653,8 +653,10 @@ body {
   .description-button-link {
     margin-bottom: 2vh;
     font-size: 1.1vw;
-    padding-left: 1.5vw;
-    padding-right: 1.5vw;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   .commander {
     margin-left: 20vw;
