@@ -531,13 +531,13 @@ body {
   .restaurant-presentation-bottom {
     margin-left: 20vw;
     margin-right: 20vw;
-    padding-left: -14vw;
     display: flex;
     justify-content: center;
   }
   .restaurant-presentation-bottom-title {
     font-size: 35px;
-    margin-left: -4vw;
+    margin-left: -6rem;
+    margin-right: 2rem;
   }
   .restaurant-presentation-bottom-like {
     display: flex;
