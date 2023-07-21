@@ -216,7 +216,6 @@
 
       &-check {
         display: flex;
-        transition: 400ms ease-in-out;
       }
     }
 
@@ -226,6 +225,24 @@
 
     .choice-price {
       transform: translateX(-16vw);
+      transition: 400ms ease-in-out;
+    }
+  }
+
+  &:not(hover) {
+    .choice-selection {
+      width: 0vw;
+      transition: 400ms ease-in-out;
+
+      &-check {
+        display: none;
+        transition: 400ms ease-in-out;
+      }
+    }
+
+    .choice-price {
+      transform: translateX(0vw);
+      transition: 400ms ease-in-out;
     }
   }
 }
