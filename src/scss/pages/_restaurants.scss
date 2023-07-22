@@ -201,7 +201,8 @@
 
     &-check.fa-check {
       font-size: 3.5vw;
-      display: none;
+      display: flex;
+      opacity: 0;
       color: $color12;
       background-color: $color8;
       padding: 2.5vw 2vw;
@@ -215,7 +216,8 @@
       transition: 400ms ease-in-out;
 
       &-check {
-        display: flex;
+        transition-delay: 100ms;
+        opacity: 1;
       }
     }
 
@@ -235,8 +237,8 @@
       transition: 400ms ease-in-out;
 
       &-check {
-        display: none;
-        transition: 400ms ease-in-out;
+        transition-delay: 300ms;
+        opacity: 0;
       }
     }
 

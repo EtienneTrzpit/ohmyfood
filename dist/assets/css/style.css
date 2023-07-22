@@ -492,7 +492,8 @@ body {
 }
 .choice-selection-check.fa-check {
   font-size: 3.5vw;
-  display: none;
+  display: flex;
+  opacity: 0;
   color: #7e7e7e;
   background-color: #ffffff;
   padding: 2.5vw 2vw;
@@ -503,7 +504,8 @@ body {
   transition: 400ms ease-in-out;
 }
 .choice:hover .choice-selection-check {
-  display: flex;
+  transition-delay: 100ms;
+  opacity: 1;
 }
 .choice:hover .choice-content {
   width: 60vw;
@@ -517,8 +519,8 @@ body {
   transition: 400ms ease-in-out;
 }
 .choice:not(hover) .choice-selection-check {
-  display: none;
-  transition: 400ms ease-in-out;
+  transition-delay: 300ms;
+  opacity: 0;
 }
 .choice:not(hover) .choice-price {
   transform: translateX(0vw);
