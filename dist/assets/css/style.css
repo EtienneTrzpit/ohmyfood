@@ -114,126 +114,142 @@ body {
   animation: spinner-anim 1s ease-in-out infinite;
 }
 
-.top {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
 .top-logo {
+  justify-content: center;
+  display: flex;
+  height: 63px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  /* height: 8vh;*/
+}
+.top-logo-img {
+  height: 36px;
+  padding: 0px 19px 0px 16px;
+  margin-top: 14px;
+  margin-bottom: 13px;
+  /*width: 40vw;*/
+}
+
+.top-location {
+  background-color: #eaeaea;
+  /*height: 6vh;*/
+  height: 53px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 8vh;
-}
-.top-logo-img {
-  width: 40vw;
-}
-.top-location {
-  background-color: #eaeaea;
-  height: 6vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   font-family: "Roboto", sans-serif;
-  font-size: 4vw;
-  padding-left: 32vw;
-  padding-right: 35vw;
+  font-size: 16px;
+  /*font-size: 4vw;
+    padding-left: 32vw;
+    padding-right: 35vw;*/
   color: #353535;
-  border-top: #353535 1px solid;
+  /*border-top: $color11 1px solid;*/
   font-weight: 500;
+}
+.top-location .fa-location-dot {
+  margin-right: 17px;
 }
 
 .description {
   background-color: #f6f6f6;
   font-family: "Roboto", sans-serif;
   text-align: center;
-  padding-top: 4vh;
-  padding-bottom: 4vh;
+  padding-top: 39px;
+  padding-bottom: 60px;
+  /*padding-top: 4vh;
+  padding-bottom: 4vh;*/
 }
 .description-title {
   font-weight: 700;
-  padding-left: 15vw;
+  font-size: 24px;
+  margin-left: 42px;
+  margin-right: 58px;
+  margin-bottom: 10px;
+  /*padding-left: 15vw;
   padding-right: 15vw;
   font-size: 6vw;
-  padding-bottom: 27px;
+  padding-bottom: 27px;*/
 }
 .description-text {
   font-weight: 300;
-  font-size: 4vw;
+  font-size: 18px;
+  margin-left: 34px;
+  margin-right: 26px;
+  margin-bottom: 45px;
+  /*font-size: 4vw;
   margin-left: 10vw;
   margin-right: 10vw;
-  padding-bottom: 27px;
+  padding-bottom: 27px;*/
   color: #353535;
-  margin-bottom: 2vh;
+  /*margin-bottom: 2vh;*/
 }
 
 .fonctionnement {
   font-family: "Roboto", sans-serif;
-  padding-top: 5vh;
+  /*padding-top: 5vh;
   padding-bottom: 10vh;
   padding-left: 2vw;
-  padding-right: 2vw;
+  padding-right: 2vw;*/
 }
 .fonctionnement-title {
   font-weight: 700;
-  font-size: 7vw;
+  /*font-size: 7vw;
   margin-bottom: 2vh;
-  margin-left: 4vw;
+  margin-left: 4vw;*/
 }
 .fonctionnement-list {
   list-style-type: none;
   counter-reset: mycounter;
-  margin-left: 1.5em;
+  /*margin-left: 1.5em;*/
 }
 .fonctionnement-list-etapes {
-  margin-top: 4vh;
+  /*margin-top: 4vh;*/
   display: flex;
   flex-direction: row;
   justify-content: left;
   align-items: center;
-  font-size: 5vw;
+  /* font-size: 5vw;
   border-radius: 50px;
   height: 9vh;
-  width: 90vw;
+  width: 90vw;*/
   background-color: #f6f6f6;
   font-weight: 500;
   box-shadow: 2px 2px 5px #7e7e7e;
 }
 .fonctionnement-list-etapes-logo {
-  margin-left: 6vw;
-  margin-right: 6vw;
+  /* margin-left: 6vw;
+  margin-right: 6vw;*/
   color: #7e7e7e;
 }
 .fonctionnement-list-etapes-logo__color1 {
   color: #9356dc;
-  margin-left: 6vw;
-  margin-right: 6vw;
+  /*margin-left: 6vw;
+  margin-right: 6vw;*/
 }
 .fonctionnement-list-etapes::before {
   content: counter(mycounter);
   counter-increment: mycounter;
   display: inline-block;
-  width: 5vw;
-  height: 5vw;
+  /* width: 5vw;
+  height: 5vw;*/
   border-radius: 50%;
   text-align: center;
   color: #ffffff;
   background-color: #9356dc;
-  font-size: 40px;
-  margin-left: -2vw;
+  /* font-size: 40px;
+  margin-left: -2vw;*/
 }
 
 .restaurants {
   font-family: "Roboto", sans-serif;
   background-color: #f6f6f6;
-  padding-top: 6vh;
-  padding-bottom: 8vh;
+  /* padding-top: 6vh;
+  padding-bottom: 8vh;*/
 }
 .restaurants-title {
   font-weight: 700;
-  font-size: 7vw;
+  /* font-size: 7vw;
   margin-bottom: 3vh;
-  margin-left: 6vw;
+  margin-left: 6vw;*/
 }
 
 @media (min-width: 1025px) {
@@ -625,13 +641,8 @@ body {
   color: #ffffff;
   border: none;
   border-radius: 90px;
-  padding-left: 4vw;
-  padding-right: 4vw;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
-  margin-top: 2vh;
-  margin-bottom: 4vh;
-  font-size: 3.2vw;
+  padding: 13px 20px;
+  font-size: 16px;
   transition: all 0.3s;
   box-shadow: 0px 0px 7px #9356dc;
   font-weight: 500;
