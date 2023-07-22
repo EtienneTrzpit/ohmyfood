@@ -180,11 +180,16 @@
 .restaurants {
   font-family: $font-text;
   background-color: $color13;
+  padding-top: 48px;
+  padding-bottom: 60px;
   /* padding-top: 6vh;
   padding-bottom: 8vh;*/
 
   &-title {
     font-weight: 700;
+    font-size: 24px;
+    margin-left: 20px;
+    margin-bottom: 24px;
     /* font-size: 7vw;
     margin-bottom: 3vh;
     margin-left: 6vw;*/
