@@ -196,6 +196,26 @@
   }
 }
 
+@media (min-width: 768px) {
+  .fonctionnement-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 20px;
+
+    &-etapes {
+      width: 30vw;
+    }
+  }
+
+  .restaurants-articles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
 @media (min-width: 1025px) {
   .top {
     &-logo {

@@ -103,6 +103,13 @@
   }
 }
 
+@media (min-width: 768px) {
+  .restaurants-article {
+    width: 45vw;
+    margin-right: 18px;
+  }
+}
+
 @media (min-width: 1025px) {
   .restaurants {
     &-article {

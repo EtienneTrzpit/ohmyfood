@@ -276,6 +276,23 @@ body {
   margin-left: 6vw;*/
 }
 
+@media (min-width: 768px) {
+  .fonctionnement-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 20px;
+  }
+  .fonctionnement-list-etapes {
+    width: 30vw;
+  }
+  .restaurants-articles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
 @media (min-width: 1025px) {
   .top-logo-img {
     height: 2vw;
@@ -820,6 +837,12 @@ body {
   opacity: 0;
 }
 
+@media (min-width: 768px) {
+  .restaurants-article {
+    width: 45vw;
+    margin-right: 18px;
+  }
+}
 @media (min-width: 1025px) {
   .restaurants-article {
     margin-right: 1vw;
