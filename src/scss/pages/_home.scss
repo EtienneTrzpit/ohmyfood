@@ -98,13 +98,18 @@
 
 .fonctionnement {
   font-family: $font-text;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 68px;
   /*padding-top: 5vh;
   padding-bottom: 10vh;
   padding-left: 2vw;
   padding-right: 2vw;*/
 
   &-title {
+    margin-top: 48px;
     font-weight: 700;
+    font-size: 24px;
     /*font-size: 7vw;
     margin-bottom: 2vh;
     margin-left: 4vw;*/
@@ -116,6 +121,11 @@
     /*margin-left: 1.5em;*/
 
     &-etapes {
+      border-radius: 20px;
+      margin-top: 24px;
+      font-size: 16px;
+      padding-top: 28px;
+      padding-bottom: 28px;
       /*margin-top: 4vh;*/
       display: flex;
       flex-direction: row;
@@ -127,21 +137,28 @@
       width: 90vw;*/
       background-color: $color13;
       font-weight: 500;
-      box-shadow: 2px 2px 5px $color12;
+      box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 
       &-logo {
+        margin-left: 22px;
+        margin-right: 27px;
         /* margin-left: 6vw;
         margin-right: 6vw;*/
         color: $color12;
+        font-size: x-large;
       }
 
       &-logo__color1 {
+        font-size: x-large;
         color: $color1;
+        margin-left: 22px;
+        margin-right: 27px;
         /*margin-left: 6vw;
         margin-right: 6vw;*/
       }
 
       &::before {
+        font-size: 14px;
         content: counter(mycounter);
         counter-increment: mycounter;
         display: inline-block;
@@ -151,6 +168,8 @@
         text-align: center;
         color: $color8;
         background-color: $color1;
+        padding: 3px 7px;
+        margin-left: -10px;
         /* font-size: 40px;
         margin-left: -2vw;*/
       }

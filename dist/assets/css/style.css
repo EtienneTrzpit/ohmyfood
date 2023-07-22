@@ -185,13 +185,18 @@ body {
 
 .fonctionnement {
   font-family: "Roboto", sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 68px;
   /*padding-top: 5vh;
   padding-bottom: 10vh;
   padding-left: 2vw;
   padding-right: 2vw;*/
 }
 .fonctionnement-title {
+  margin-top: 48px;
   font-weight: 700;
+  font-size: 24px;
   /*font-size: 7vw;
   margin-bottom: 2vh;
   margin-left: 4vw;*/
@@ -202,6 +207,11 @@ body {
   /*margin-left: 1.5em;*/
 }
 .fonctionnement-list-etapes {
+  border-radius: 20px;
+  margin-top: 24px;
+  font-size: 16px;
+  padding-top: 28px;
+  padding-bottom: 28px;
   /*margin-top: 4vh;*/
   display: flex;
   flex-direction: row;
@@ -213,19 +223,26 @@ body {
   width: 90vw;*/
   background-color: #f6f6f6;
   font-weight: 500;
-  box-shadow: 2px 2px 5px #7e7e7e;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 .fonctionnement-list-etapes-logo {
+  margin-left: 22px;
+  margin-right: 27px;
   /* margin-left: 6vw;
   margin-right: 6vw;*/
   color: #7e7e7e;
+  font-size: x-large;
 }
 .fonctionnement-list-etapes-logo__color1 {
+  font-size: x-large;
   color: #9356dc;
+  margin-left: 22px;
+  margin-right: 27px;
   /*margin-left: 6vw;
   margin-right: 6vw;*/
 }
 .fonctionnement-list-etapes::before {
+  font-size: 14px;
   content: counter(mycounter);
   counter-increment: mycounter;
   display: inline-block;
@@ -235,6 +252,8 @@ body {
   text-align: center;
   color: #ffffff;
   background-color: #9356dc;
+  padding: 3px 7px;
+  margin-left: -10px;
   /* font-size: 40px;
   margin-left: -2vw;*/
 }
