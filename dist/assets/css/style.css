@@ -558,6 +558,15 @@ body {
   background-color: #f6f6f6;
 }
 
+@media (min-width: 768px) {
+  .menu-section {
+    padding-left: 16vw;
+    padding-right: 16vw;
+  }
+  .choice-selection-check.fa-check {
+    padding: 10px 5px;
+  }
+}
 @media (min-width: 1025px) {
   .restaurants-main {
     background-color: #ffffff;

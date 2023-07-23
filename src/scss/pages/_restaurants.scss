@@ -268,6 +268,17 @@
   background-color: $color13;
 }
 
+@media (min-width: 768px) {
+  .menu-section {
+    padding-left: 16vw;
+    padding-right: 16vw;
+  }
+
+  .choice-selection-check.fa-check {
+    padding: 10px 5px;
+  }
+}
+
 @media (min-width: 1025px) {
   .restaurants-main {
     background-color: $color8;
