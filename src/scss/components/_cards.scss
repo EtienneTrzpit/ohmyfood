@@ -120,12 +120,13 @@
 @media (min-width: 1025px) {
   .restaurants {
     &-articles {
-      margin-right: -5vw;
+      margin-right: -4vw;
+      margin-left: 0vw;
     }
     &-article {
-      width: 34vw;
-      padding-right: 100px;
-      padding-top: 50px;
+      width: 31vw;
+      padding-right: 4vw;
+      padding-top: 25px;
     }
   }
 }

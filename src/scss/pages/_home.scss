@@ -240,24 +240,24 @@
   }
 
   .fonctionnement {
-    margin-left: 18vw;
-    margin-right: 18vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
 
     &-title {
       display: block;
     }
 
     &-list-etapes {
-      width: 370px;
+      width: 350px;
     }
   }
 
   .restaurants {
     padding: 30px 16vw 200px;
-
     &-title {
       display: block;
       margin-bottom: 50px;
+      padding-left: 2vw;
     }
   }
 }
