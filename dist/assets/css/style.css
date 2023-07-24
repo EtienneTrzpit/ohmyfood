@@ -66,41 +66,42 @@ body {
 }
 @media (min-width: 1025px) {
   .bottom {
-    margin-top: -12vh;
+    margin-top: -60px;
     padding-left: 5vw;
-    height: 12vh;
-    padding-bottom: 2vh;
+    height: 114px;
+    padding-bottom: 30px;
     display: flex;
     justify-content: flex-start;
     flex-direction: row-reverse;
     align-items: end;
   }
   .bottom-logo {
-    margin-bottom: 1vh;
-    margin-left: 4vw;
-    margin-right: 8vw;
-    height: 1vw;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 40px;
+    height: 20px;
   }
   .bottom-list {
     flex-direction: row;
-    font-size: 1vw;
+    font-size: 16px;
   }
   .bottom-list-item {
-    margin-right: 1vw;
+    margin-right: 16px;
   }
   .bottom-list-item-utensils {
-    margin-right: 0.4vw;
-    padding-top: 1vh;
+    margin-right: 14px;
+    padding-top: 9px;
   }
   .bottom-list-item-shake {
-    margin-right: 0.5vw;
-    padding-top: 1vh;
+    margin-right: 10px;
+    padding-top: 10px;
+    margin-left: -6px;
   }
   .bottom-list-item-shake + p {
-    margin-right: 2vw;
+    margin-right: 34px;
   }
   .bottom-list-link {
-    margin-bottom: 1vh;
+    margin-bottom: 2px;
     flex-direction: row;
   }
 }
