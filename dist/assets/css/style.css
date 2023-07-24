@@ -322,7 +322,7 @@ body {
   }
   .restaurants-title {
     display: block;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     padding-left: 2vw;
   }
 }
@@ -814,10 +814,10 @@ body {
 @media (min-width: 1025px) {
   .restaurants-articles {
     margin-right: -4vw;
-    margin-left: 0vw;
+    margin-left: -1vw;
   }
   .restaurants-article {
-    width: 31vw;
+    width: 31.5vw;
     padding-right: 4vw;
     padding-top: 25px;
   }
