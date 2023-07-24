@@ -24,7 +24,7 @@ body {
   font-weight: 500;
   background-color: #353535;
   color: #ffffff;
-  padding: 22px 25px;
+  padding: 25px 25px 18px;
 }
 .bottom-logo {
   margin-bottom: 16px;
@@ -53,6 +53,17 @@ body {
   flex-direction: row;
 }
 
+@media (min-width: 768px) {
+  .bottom {
+    display: flex;
+    justify-content: center;
+  }
+  .bottom-logo {
+    margin-bottom: 0;
+    margin-right: 5vw;
+    width: 10vw;
+  }
+}
 @media (min-width: 1025px) {
   .bottom {
     margin-top: -12vh;
@@ -60,6 +71,7 @@ body {
     height: 12vh;
     padding-bottom: 2vh;
     display: flex;
+    justify-content: flex-start;
     flex-direction: row-reverse;
     align-items: end;
   }

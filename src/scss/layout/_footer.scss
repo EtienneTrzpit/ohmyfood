@@ -6,7 +6,7 @@
   font-weight: 500;
   background-color: $color11;
   color: $color8;
-  padding: 22px 25px;
+  padding: 25px 25px 18px;
 
   &-logo {
     margin-bottom: 16px;
@@ -42,6 +42,18 @@
   }
 }
 
+@media (min-width: 768px) {
+  .bottom {
+    display: flex;
+    justify-content: center;
+
+    &-logo {
+      margin-bottom: 0;
+      margin-right: 5vw;
+      width: 10vw;
+    }
+  }
+}
 @media (min-width: 1025px) {
   .bottom {
     margin-top: -12vh;
@@ -49,6 +61,7 @@
     height: 12vh;
     padding-bottom: 2vh;
     display: flex;
+    justify-content: flex-start;
     flex-direction: row-reverse;
     align-items: end;
 
