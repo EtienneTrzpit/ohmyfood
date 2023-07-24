@@ -211,7 +211,7 @@
     right: 0;
     top: 0;
     transition: width 1000ms ease-in;
-
+    border-radius: 0 15px 15px 0;
     background-color: $color3;
 
     &-check.fa-check {
@@ -277,6 +277,10 @@
   .choice-selection-check.fa-check {
     padding: 10px 5px;
   }
+
+  .restaurant-presentation-bottom {
+    border-radius: 100px 100px 0 0;
+  }
 }
 
 @media (min-width: 1025px) {
@@ -285,13 +289,16 @@
   }
 
   .restaurant-top {
+    height: 96px;
     &-return {
-      width: 40px;
+      height: 34px;
       left: 1vw;
+      top: 30px;
     }
 
     &-logo {
-      width: 200px;
+      margin-top: 30px;
+      height: 36px;
     }
   }
 
@@ -299,11 +306,14 @@
     &-bottom {
       margin-left: 20vw;
       margin-right: 20vw;
+      padding-bottom: 40px;
+      margin-bottom: -40px;
       display: flex;
       justify-content: center;
+      border-radius: 40px 40px 0 0;
 
       &-title {
-        font-size: 35px;
+        font-size: 28px;
         margin-left: -6rem;
         margin-right: 2rem;
       }
@@ -311,7 +321,7 @@
         display: flex;
         margin-right: -4vw;
         .fa-heart {
-          font-size: 30px;
+          font-size: x-large;
         }
       }
     }
@@ -319,17 +329,20 @@
 
   .menu-section {
     background-color: $color13;
+    padding-left: 0;
+    padding-right: 0;
     margin-left: 20vw;
     margin-right: 20vw;
-    margin-bottom: -4vh;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
 
     &-title {
-      margin-left: 8vw;
+      margin-left: 10vw;
       font-size: 19px;
 
       &::after {
         left: 20px;
-        top: 105px;
+        top: 30px;
         width: 36px;
         height: 3px;
       }
@@ -337,8 +350,8 @@
   }
 
   .choice {
-    margin-left: 8vw;
-    margin-right: 12vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
     padding: 2vh 1vw;
 
     &-title {
@@ -354,9 +367,13 @@
       margin-top: 35px;
     }
 
+    &-selection {
+      height: 94px;
+    }
+
     &-selection-check.fa-check {
-      font-size: 1vw;
-      padding: 0.6vw 0.3vw;
+      font-size: 16px;
+      padding: 10px 5px;
     }
 
     &:hover {
