@@ -103,7 +103,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-breakpoint) {
   .restaurants-articles {
     margin-left: -10px;
     margin-right: 10px;
@@ -117,7 +117,7 @@
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: $desktop-breakpoint) {
   .restaurants {
     &-articles {
       margin-right: -4vw;

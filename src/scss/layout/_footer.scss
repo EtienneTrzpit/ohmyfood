@@ -42,7 +42,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-breakpoint) {
   .bottom {
     display: flex;
     justify-content: center;
@@ -54,7 +54,7 @@
     }
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: $desktop-breakpoint) {
   .bottom {
     margin-top: -60px;
     padding-left: 5vw;

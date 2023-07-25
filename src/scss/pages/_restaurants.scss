@@ -268,7 +268,7 @@
   background-color: $color13;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-breakpoint) {
   .menu-section {
     padding-left: 16vw;
     padding-right: 16vw;
@@ -283,7 +283,7 @@
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: $desktop-breakpoint) {
   .restaurants-main {
     background-color: $color8;
   }

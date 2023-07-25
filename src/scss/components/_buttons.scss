@@ -58,7 +58,7 @@
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: $desktop-breakpoint) {
   .commander {
     margin-left: 20vw;
     margin-right: 20vw;
