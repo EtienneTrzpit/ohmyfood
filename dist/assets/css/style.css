@@ -53,7 +53,7 @@ body {
   flex-direction: row;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .bottom {
     display: flex;
     justify-content: center;
@@ -64,7 +64,7 @@ body {
     width: 10vw;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .bottom {
     margin-top: -60px;
     padding-left: 5vw;
@@ -289,7 +289,7 @@ body {
   margin-left: 6vw;*/
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .fonctionnement-title {
     display: flex;
     justify-content: center;
@@ -313,7 +313,7 @@ body {
     justify-content: center;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .top-logo-img {
     height: 34px;
   }
@@ -572,7 +572,7 @@ body {
   background-color: #f6f6f6;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .menu-section {
     padding-left: 16vw;
     padding-right: 16vw;
@@ -584,7 +584,7 @@ body {
     border-radius: 100px 100px 0 0;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .restaurants-main {
     background-color: #ffffff;
   }
@@ -725,7 +725,7 @@ body {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .commander {
     margin-left: 20vw;
     margin-right: 20vw;
@@ -823,7 +823,7 @@ body {
   opacity: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .restaurants-articles {
     margin-left: -10px;
     margin-right: 10px;
@@ -835,7 +835,7 @@ body {
     width: 350px;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .restaurants-articles {
     margin-right: -4vw;
     margin-left: -1vw;
