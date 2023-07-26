@@ -28,31 +28,24 @@
   display: flex;
   height: 63px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-  /* height: 8vh;*/
 
   &-img {
     height: 36px;
     padding: 0px 19px 0px 16px;
     margin-top: 14px;
     margin-bottom: 13px;
-    /*width: 40vw;*/
   }
 }
 
 .top-location {
   background-color: $color9;
-  /*height: 6vh;*/
   height: 53px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: $font-text;
   font-size: 16px;
-  /*font-size: 4vw;
-    padding-left: 32vw;
-    padding-right: 35vw;*/
   color: $color11;
-  /*border-top: $color11 1px solid;*/
   font-weight: 500;
 
   .fa-location-dot {
@@ -66,8 +59,6 @@
   text-align: center;
   padding-top: 39px;
   padding-bottom: 60px;
-  /*padding-top: 4vh;
-  padding-bottom: 4vh;*/
 
   &-title {
     font-weight: 700;
@@ -75,10 +66,6 @@
     margin-left: 42px;
     margin-right: 58px;
     margin-bottom: 10px;
-    /*padding-left: 15vw;
-    padding-right: 15vw;
-    font-size: 6vw;
-    padding-bottom: 27px;*/
   }
 
   &-text {
@@ -87,12 +74,7 @@
     margin-left: 34px;
     margin-right: 26px;
     margin-bottom: 45px;
-    /*font-size: 4vw;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    padding-bottom: 27px;*/
     color: $color11;
-    /*margin-bottom: 2vh;*/
   }
 }
 
@@ -101,24 +83,16 @@
   margin-left: 20px;
   margin-right: 20px;
   padding-bottom: 68px;
-  /*padding-top: 5vh;
-  padding-bottom: 10vh;
-  padding-left: 2vw;
-  padding-right: 2vw;*/
 
   &-title {
     margin-top: 48px;
     font-weight: 700;
     font-size: 24px;
-    /*font-size: 7vw;
-    margin-bottom: 2vh;
-    margin-left: 4vw;*/
   }
 
   &-list {
     list-style-type: none;
     counter-reset: mycounter;
-    /*margin-left: 1.5em;*/
 
     &-etapes {
       border-radius: 20px;
@@ -126,15 +100,10 @@
       font-size: 16px;
       padding-top: 28px;
       padding-bottom: 28px;
-      /*margin-top: 4vh;*/
       display: flex;
       flex-direction: row;
       justify-content: left;
       align-items: center;
-      /* font-size: 5vw;
-      border-radius: 50px;
-      height: 9vh;
-      width: 90vw;*/
       background-color: $color13;
       font-weight: 500;
       box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
@@ -142,8 +111,6 @@
       &-logo {
         margin-left: 22px;
         margin-right: 27px;
-        /* margin-left: 6vw;
-        margin-right: 6vw;*/
         color: $color12;
         font-size: x-large;
       }
@@ -153,8 +120,6 @@
         color: $color1;
         margin-left: 22px;
         margin-right: 27px;
-        /*margin-left: 6vw;
-        margin-right: 6vw;*/
       }
 
       &::before {
@@ -162,16 +127,12 @@
         content: counter(mycounter);
         counter-increment: mycounter;
         display: inline-block;
-        /* width: 5vw;
-        height: 5vw;*/
         border-radius: 50%;
         text-align: center;
         color: $color8;
         background-color: $color1;
         padding: 3px 7px;
         margin-left: -10px;
-        /* font-size: 40px;
-        margin-left: -2vw;*/
       }
     }
   }
@@ -182,17 +143,12 @@
   background-color: $color13;
   padding-top: 48px;
   padding-bottom: 60px;
-  /* padding-top: 6vh;
-  padding-bottom: 8vh;*/
 
   &-title {
     font-weight: 700;
     font-size: 24px;
     margin-left: 20px;
     margin-bottom: 24px;
-    /* font-size: 7vw;
-    margin-bottom: 3vh;
-    margin-left: 6vw;*/
   }
 }
 
