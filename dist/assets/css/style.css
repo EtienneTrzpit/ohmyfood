@@ -528,17 +528,14 @@ body {
   .restaurants-main {
     background-color: #ffffff;
   }
-  .restaurant-top {
-    height: 96px;
-  }
   .restaurant-top-return {
     height: 34px;
     left: 1vw;
-    top: 30px;
+    top: 14px;
   }
   .restaurant-top-logo {
-    margin-top: 30px;
-    height: 36px;
+    margin-top: 14px;
+    height: 34px;
   }
   .restaurant-presentation-img {
     height: 375px;
