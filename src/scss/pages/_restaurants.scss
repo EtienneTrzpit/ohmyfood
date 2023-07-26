@@ -303,6 +303,9 @@
   }
 
   .restaurant-presentation {
+    &-img {
+      height: 375px;
+    }
     &-bottom {
       margin-left: 20vw;
       margin-right: 20vw;
